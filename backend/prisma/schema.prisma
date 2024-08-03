@@ -18,3 +18,11 @@ model User {
   email String  @unique
   name  String?
 }
+
+model Candidato {
+  id                 Int      @id @default(autoincrement())
+  nombre             String
+  apellido           String
+  correo_electronico String
+  telefono           String?
+}
